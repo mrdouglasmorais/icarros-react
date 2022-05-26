@@ -1,4 +1,4 @@
-const { DefinePlugin } = require('webpack');
+// const { DefinePlugin } = require('webpack');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
