@@ -29,6 +29,9 @@ module.exports = merge( common, {
             loader: 'sass-loader'
           }
         ]
+      }, {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
       }
     ]
   },
