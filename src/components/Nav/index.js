@@ -5,7 +5,7 @@ const Nav = () => {
   return(
     <nav>
       <p>Topo</p>
-      <img src={Card} alt="" />
+      <img src={Card} alt="" width={200} height={'auto'} />
     </nav>
   )
 }
