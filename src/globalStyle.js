@@ -6,6 +6,9 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     font-family: 'Roboto', sans-serif;
   }
+  body {
+    background-color: 	#eeeeee;
+  }
 `
 
 export default GlobalStyle;
