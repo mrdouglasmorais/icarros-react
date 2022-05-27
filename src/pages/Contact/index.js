@@ -1,10 +1,15 @@
 import React from 'react';
 
+import Nav from '@/components/Nav';
+import Footer from '@/components/Footer';
+
 const Contact = () => {
   return(
-    <div>
-      <h1>Contact</h1>
-    </div>
+    <>
+      <Nav />
+        <h1>Contact</h1>
+      <Footer/>
+    </>
   )
 }
 
