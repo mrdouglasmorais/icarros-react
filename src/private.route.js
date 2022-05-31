@@ -1,8 +1,8 @@
 import React from 'react';
-import { Route, useNavigate } from 'react-router-dom';
+import { Route, Navigate } from 'react-router-dom';
 import jwt_decode from 'jwt-decode';
 
-const PrivateRoute = ({element: Element, path: Path, ...rest}) => {
+const PrivateRoute = ({children, element: Element, path: Path, ...rest}) => {
   // const navigate = useNavigate()
   const isLoggedIn = localStorage.getItem('@IcarrosToken');
   const isSectionActive = () => {
@@ -18,15 +18,7 @@ const PrivateRoute = ({element: Element, path: Path, ...rest}) => {
     }
 
   }
-  return (
-    <>
-      { isSectionActive() === true && (<div><p>Logado</p></div>) }
-      { isSectionActive() === false && (<div><p>Logado</p></div>) }
-      {/* <Route {...rest} element={
-        () => isSectionActive() ? <Element {...props}/> : navigate('/')
-      }/> */}
-    </>
-  )
+  return isSectionActive() ? children : (<Navigate replace to="/"/>)
 }
 
 export default PrivateRoute;
