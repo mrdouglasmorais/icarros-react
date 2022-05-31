@@ -10,7 +10,10 @@ const Home = () => {
   const [ isLoad, setIsLoad ] = useState(false)
 
   const Test = () => {
-    setIsLoad(!isLoad);
+    setIsLoad((e) => {
+      e = !isLoad
+      console.log(e)
+    return e})
   } 
   
   return(
