@@ -11,6 +11,9 @@ import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 
 import { FormContainer, ContactCard } from './styles';
+import Cart from '@/assets/cars/1.png';
+
+import { menuItem } from '@/Constants';
  
 const Contact = () => {
   const navigate = useNavigate();
@@ -41,7 +44,10 @@ const Contact = () => {
 
   return(
     <>
-      <Nav />
+      <Nav 
+        logo={Cart}
+        item={menuItem}
+      />
       <FormContainer>
         <ContactCard>
           <form onSubmit={sendData}>

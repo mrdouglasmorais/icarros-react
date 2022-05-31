@@ -4,6 +4,9 @@ import { useNavigate } from 'react-router-dom';
 
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
+import Cart from '@/assets/cars/1.png';
+
+import { menuItem } from '@/Constants';
 
 import { authAPI } from '@/service/api';
 
@@ -16,10 +19,11 @@ const Login = () => {
   const submitLogin = e => {
     e.preventDefault();
     authAPI.post('session', data)
-    
+
     .then( res => {
       const { token } = res.data;
-      localStorage.setItem('@IcarrosToken', token)
+      localStorage.setItem('@IcarrosToken', token);
+      
       toast('Login realizado com sucesso', {
         type: 'success',
         onClose: () => navigate('/dash')
