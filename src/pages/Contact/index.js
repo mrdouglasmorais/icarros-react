@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from 'react';
 import { toast } from 'react-toastify';
 import Lottie from 'lottie-react-web';
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
 
 import { api } from '@/service/api';
 

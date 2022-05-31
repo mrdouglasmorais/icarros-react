@@ -12,6 +12,7 @@ const Nav = () => {
         <img src={Card} alt="" width={200} height={'auto'} />
         <Link to="/">Home</Link>
         <Link to="/contato">Contato</Link>
+        <Link to="/login">Login</Link>
       </div>
     </NavContent>
   )

@@ -20,7 +20,9 @@
   "homepage": "https://github.com/mrdouglasmorais/icarros-react#readme",
   "devDependencies": {
     "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.18.2",
     "@babel/plugin-syntax-jsx": "^7.17.12",
+    "@babel/preset-env": "^7.18.2",
     "@babel/preset-react": "^7.17.12",
     "@imaginary-cloud/eslint-config-react": "^2.0.1",
     "babel-loader": "^8.2.5",
@@ -47,6 +49,7 @@
   },
   "dependencies": {
     "axios": "^0.27.2",
+    "jwt-decode": "^3.1.2",
     "lottie-react-web": "^2.2.2",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
