@@ -4,7 +4,6 @@ const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 const common = require('./webpack.common');
 const { merge } = require('webpack-merge');
-const { output } = require('./webpack.common');
 
 module.exports = merge( common, {
   mode: 'production',
@@ -37,12 +36,6 @@ module.exports = merge( common, {
       }
     ]
   },
-  // externals: {
-  //   react: 'React',
-  //   axios: 'axios',
-  //   'react-dom': 'ReactDOM',
-  //   'react-router-dom': 'ReactRouterDOM', 
-  // },
   plugins: [
     new HtmlWebpackPlugin({
       template: './template.prod.html'
