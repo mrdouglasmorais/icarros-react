@@ -1,4 +1,3 @@
-// const { DefinePlugin } = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const common = require('./webpack.common');
 const { merge } = require('webpack-merge');
