@@ -13,4 +13,6 @@ const Button = ({ label, action, type, isDisable }) => {
   )
 }
 
+
+
 export default Button;
