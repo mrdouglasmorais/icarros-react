@@ -19,6 +19,8 @@ hotjar.identify('3029463', {
 hotjar.event('button-click');
 hotjar.stateChange('/')
 
+console.log(process.env.VALUE_ENV)
+
 const App = () => {
   return(
     <>

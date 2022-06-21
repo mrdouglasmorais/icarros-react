@@ -63,6 +63,8 @@
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.2",
     "axios": "^0.27.2",
+    "dotenv": "^16.0.1",
+    "dotenv-webpack": "^7.1.0",
     "jwt-decode": "^3.1.2",
     "lottie-react-web": "^2.2.2",
     "react": "^18.1.0",
