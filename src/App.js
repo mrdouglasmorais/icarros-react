@@ -1,6 +1,7 @@
 import React from 'react';
 import Routes from './routes';
 import { Provider } from 'react-redux';
+import { hotjar } from 'react-hotjar';
 
 import store from '@/store';
 
@@ -9,6 +10,14 @@ import { ToastContainer } from 'react-toastify';
 import GlobalStyle from './globalStyle';
 
 import "react-toastify/ReactToastify.min.css";
+
+// hotjar configs
+hotjar.initialize(hjid, hjsv);
+hotjar.identify('3029463', {
+  userProperty: 'value'  
+})
+hotjar.event('button-click');
+hotjar.stateChange('/')
 
 const App = () => {
   return(
