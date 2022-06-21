@@ -12,7 +12,7 @@ import GlobalStyle from './globalStyle';
 import "react-toastify/ReactToastify.min.css";
 
 // hotjar configs
-hotjar.initialize(hjid, hjsv);
+hotjar.initialize('3029463');
 hotjar.identify('3029463', {
   userProperty: 'value'  
 })
