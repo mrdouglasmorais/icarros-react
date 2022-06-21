@@ -25,7 +25,7 @@ console.log(process.env.VALUE_ENV);
 
 // google TAG manager
 const tagManagerArgs = {
-  gtmId: process.env.TAG_MANAGER
+  gtmId: 'GTM-WJ846NF'
 }
 
 TagMananger.initialize(tagManagerArgs);
