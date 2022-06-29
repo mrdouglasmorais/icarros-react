@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+
+import { UserContent } from '@/context'
 
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
@@ -9,7 +11,7 @@ import Cart from '@/assets/cars/1.png';
 import { menuItem } from '@/Constants';
 
 const Home = () => {
-
+  const { setUser } = useContext(UserContent)
   const [ isLoad, setIsLoad ] = useState(false)
 
   const Test = () => {
@@ -35,6 +37,11 @@ const Home = () => {
             </>
           )}
           <button onClick={ Test }>Clique me</button>
+          <input 
+            type="text" 
+            placeholder="informe seu nome"
+            onChange={ e => setUser(e.target.value)}
+          />
         </HomeSection>
       <Footer />
     </>

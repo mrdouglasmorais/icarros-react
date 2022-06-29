@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useContext, useState} from 'react';
 import Routes from './routes';
 import { Provider } from 'react-redux';
 import { hotjar } from 'react-hotjar';
@@ -9,6 +9,8 @@ import store from '@/store';
 import { ToastContainer } from 'react-toastify';
 
 import GlobalStyle from './globalStyle';
+
+import { UserProvider } from '@/context';
 
 import "react-toastify/ReactToastify.min.css";
 
@@ -33,13 +35,15 @@ TagMananger.initialize(tagManagerArgs);
 const App = () => {
   return(
     <>
-      <Provider store={store}>    
-        <GlobalStyle/>
-        <Routes />
-        <ToastContainer 
-          position="bottom-right" 
-          newestOnTop
-        />
+      <Provider store={store}>
+        <UserProvider>
+          <GlobalStyle/>
+          <Routes />
+          <ToastContainer 
+            position="bottom-right" 
+            newestOnTop
+          />
+        </UserProvider>
       </Provider>
     </>
   )
